@@ -1,0 +1,21 @@
+{
+    "name": "calculadora-juros-compostos",
+    "version": "0.1.0",
+    "description": "Aplicação de calculadora de juros compostos em Node.js",
+    "main": "public/app.js",
+    "scripts": {
+        "start": "node public/app.js",
+        "build:css": "postcss src/style.css -o public/style.css"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.47",
+        "postcss-cli": "^11.0.0",
+        "tailwindcss": "^3.4.13"
+    }
+}
