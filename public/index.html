@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/style.css">
     <script>
         function calcular() {
-        const apiUrl = process.env.API_URL; 
         const formData = {
             valor_inicial: document.querySelector('input[name="valor_inicial"]').value,
             ciclos: document.querySelector('input[name="ciclos"]').value,
@@ -15,7 +14,7 @@
             rendimento: document.querySelector('input[name="rendimento"]').value,
             extra: document.querySelector('input[name="extra"]').value || 0 // Valor extra opcional
         };
-        fetch(`${apiUrl}/calculadoraComposta`, {
+        fetch(`/calculadoraComposta`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
