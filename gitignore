@@ -19,3 +19,6 @@ Thumbs.db
 
 # Build folder
 public/build/
+
+# Environment variables
+.env.local
